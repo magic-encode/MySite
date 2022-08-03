@@ -1,0 +1,164 @@
+{% load static %}
+
+<style>
+  .ulu
+  {
+    font-weight: 700;
+    margin-top: 25px;
+    padding-left: 15%;
+    padding-right : 15%;
+  }
+</style>
+
+<section id="snippet-11" class="wrapper bg-light wrapper-border">
+    <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+      <div class="row gx-md-8 gx-xl-12 gy-6 align-items-center">
+        <div class="col-md-8 col-lg-6 order-lg-2 mx-auto">
+          <div class="img-mask mask-2"><img src="{% static 'faster.jpg' %}" alt=""></div>
+        </div>
+        <!--/column -->
+        <div class="col-lg-6">
+          <h2 class="display-5 mb-3">About my self</h2>
+          <p class="lead fs-lg">
+            Hello! I'm Abdullajon, a backend enginner from Uzbekistan. I really enjoy to working with python projects.
+          </p>
+          <p>
+            My full name is Xalimov Abdulla. I was born in Balikchi district, Andijan region in 2000. 
+            During 2007-2016, I studied at school number 6.Then I continued at the Balikhchi College of 
+            Pedagogy and Social-Economics. <br>
+          </p>
+        </div>
+        <!--/column -->
+      </div>
+      <!-- /.row -->
+      <section id="snippet-2" class="wrapper bg-light wrapper-border">
+        <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+          <div class="swiper-container grid-view mb-6 swiper-container-0" data-margin="30" data-dots="true" data-items-xl="3" data-items-md="2" data-items-xs="1">
+            <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events">
+              <div class="swiper-wrapper" id="swiper-wrapper-081067de8b245eef6" aria-live="off" style="cursor: grab; transform: translate3d(-1140px, 0px, 0px); transition-duration: 0ms;">
+                {% for fot in foto %}
+                <div class="swiper-slide" role="group" aria-label="1 / 6" style="width: 350px; margin-right: 30px;">
+                  <figure class="rounded mb-6">
+                    <img src="{{fot.image.url}}" srcset="{{fot.image.url}} 2x" alt="">
+                    <a class="item-link" href="{{fot.image.url}}" data-glightbox="" data-gallery="projects-group">
+                      <i class="uil uil-focus-add"></i>
+                    </a>
+                  </figure>
+                  <div class="project-details d-flex justify-content-center flex-column">
+                    <div class="post-header">
+                      <h2 class="post-title h3"><a href="{{fot.link}}" class="link-dark">{{fot.title}}</a></h2>
+                    </div>
+                    <!-- /.post-header -->
+                  </div>
+                  <!-- /.project-details -->
+                </div>
+                {% endfor %}
+                <!--/.swiper-slide -->
+              </div>
+              <!--/.swiper-wrapper -->
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+          </div>
+            <!-- /.swiper -->
+          <div class="swiper-controls">
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1">
+              </span>
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2">
+              </span>
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3">
+
+              </span>
+              <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 4" aria-current="true">
+              </span>
+            </div>
+            <div class="swiper-navigation">
+              <div class="swiper-button swiper-button-prev swiper-button-disabled" tabindex="-1" 
+              role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-e194de487c0bebd6" 
+              aria-disabled="true">
+              </div>
+              <div class="swiper-button swiper-button-next" tabindex="0" role="button" aria-label="Next slide" 
+              aria-controls="swiper-wrapper-e194de487c0bebd6" aria-disabled="false">
+              </div>
+            </div>
+          </div>
+          <!-- text -->
+          <div class="ulu">
+            I am learned IT in PDP academy and UDEMY,MohirDev ,in the departure of Python backend. 
+            Additionally ,I also work on myself independently in order to take answers to my questions that 
+            I am interested in. The best thing I have ever liked about this academy is "zoom meetings"in which 
+            mentor works with each student one by one.
+          </div>
+          <!-- end text -->
+        </div>
+        <!-- /.swiper-container -->
+      </div>
+    </section>
+      <div class="row gx-md-8 gx-xl-12 mt-10 mt-md-13">
+        <div class="col-lg-4">
+          <h2 class="display-5 mb-3">My Working Process</h2>
+          <p>
+            Based on my experience, I am creating a web application in python django and they consist of following processes.
+          </p>
+        </div>
+        <!-- /column -->
+        <div class="col-lg-8">
+          <div class="row gy-6 gx-md-8 gx-xl-12">
+            <div class="col-md-6">
+              <div class="d-flex flex-row">
+                <div>
+                  <span class="icon btn btn-circle btn-primary disabled me-4"><span class="number fs-18">1</span></span>
+                </div>
+                <div>
+                  <h4 class="mb-1">New project</h4>
+                  <p class="mb-0">Creat new folder and install Django</p>
+                </div>
+              </div>
+            </div>
+            <!--/column -->
+            <div class="col-md-6">
+              <div class="d-flex flex-row">
+                <div>
+                  <span class="icon btn btn-circle btn-primary disabled me-4"><span class="number fs-18">2</span></span>
+                </div>
+                <div>
+                  <h4 class="mb-1">Create Templates</h4>
+                  <p class="mb-0">I create an html template to improve and beautify the project</p>
+                </div>
+              </div>
+            </div>
+            <!--/column -->
+            <div class="col-md-6">
+              <div class="d-flex flex-row">
+                <div>
+                  <span class="icon btn btn-circle btn-primary disabled me-4"><span class="number fs-18">3</span></span>
+                </div>
+                <div>
+                  <h4 class="mb-1">Push GitHub</h4>
+                  <p class="mb-0">I use the github platform to continuously modify and maintain my project.</p>
+                </div>
+              </div>
+            </div>
+            <!--/column -->
+            <div class="col-md-6">
+              <div class="d-flex flex-row">
+                <div>
+                  <span class="icon btn btn-circle btn-primary disabled me-4"><span class="number fs-18">4</span></span>
+                </div>
+                <div>
+                  <h4 class="mb-1">Deployment</h4>
+                  <p class="mb-0">I deploy my project to heroku</p>
+                </div>
+              </div>
+            </div>
+            <!--/column -->
+          </div>
+          <!--/.row -->
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    
+    <!-- /.container -->
+  </section>

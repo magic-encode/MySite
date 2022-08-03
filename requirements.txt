@@ -1,0 +1,8 @@
+environs==9.5.0
+gunicorn==20.1.0
+Pillow==9.2.0
+whitenoise==6.2.0
+Django==3.2.14
+docker==5.0.3
+docker-compose==1.29.2
+psycopg2==2.9.3

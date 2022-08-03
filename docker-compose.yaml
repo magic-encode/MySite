@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  app:
+    build: .
+
+    depends_on:
+      - db
+    
+    environment:
+      - DB_ENGINE=django.db.backends.postgresql
+      - DB_NAME=d24gvoqmi5cpqn
+      - DB_USER=oiualgtgkeolwc
+      - DB_PASSWORD=d27119abb195aaba3ccdea6bedfb32a56c1e0ee8adf33a85bc2066791f47ae9e
+      - DB_HOST=ec2-3-217-14-181.compute-1.amazonaws.com
+      - DB_PORT=5432
+    ports:
+      - 8000:8000
+  
+  db:
+    image: postgres:12.11
+    environment:
+     - DB_NAME=d24gvoqmi5cpqn
+     - DB_USER=oiualgtgkeolwc
+     - DB_PASSWORD=d27119abb195aaba3ccdea6bedfb32a56c1e0ee8adf33a85bc2066791f47ae9e
+
+    ports:
+      - 5427:5432
+    volumes:
+      - ./data/db:/var/lib/postgresql/data

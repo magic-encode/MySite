@@ -1,0 +1,84 @@
+{% load static %}
+
+<style>
+  #comment
+  {
+    margin-top: 30px;
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+  #comments
+  {
+    margin-bottom: 20px;
+  }
+</style>
+
+<br> <br>
+<div id="comment">
+
+    <div id="comments1">
+      <h3 class="mb-6">{{items.count}} Comments</h3>
+      <ol id="singlecomments" class="commentlist">
+        {% for item in items %}
+        <li class="comment">
+          <div class="comment-header d-md-flex align-items-center">
+            <div class="d-flex align-items-center">
+              <figure class="user-avatar"><img class="rounded-circle" alt="" src="{% static 'default.jpeg' %}" />
+              </figure>
+              <div>
+                <h6 class="comment-author"><a href="blog-post.html#" class="link-dark">{{item}}</a></h6>
+                <ul class="post-meta">
+                  <li><i class="uil uil-calendar-alt"></i>{{item.published}}</li>
+                </ul>
+                <!-- /.post-meta -->
+              </div>
+              <!-- /div -->
+            </div>
+            <!-- /div -->
+            {% if user.is_staff %}
+            <div class="mt-3 mt-md-0 ms-auto">
+              <a href="{% url 'about-my-self-comment-remove' item.id %}"
+                class="btn btn-soft-ash btn-sm rounded-pill btn-icon btn-icon-start mb-0"><span style="color: red;"
+                  class="iconify" data-icon="clarity:remove-solid"></span> Remove</a>
+            </div>
+            {% endif %}
+            <!-- /div -->
+          </div>
+          <!-- /.comment-header -->
+          <p>{{item.comment}}</p>
+        </li>
+        {% empty %}
+        <li class="comment">
+          <div class="comment-header d-md-flex align-items-center">
+            <div class="d-flex align-items-center">
+
+              No have any comments yet
+              <!-- /div -->
+            </div>
+            <!-- /div -->
+
+            <!-- /div -->
+          </div>
+          <!-- /.comment-header -->
+          <p>{{item.comment}}</p>
+        </li>
+
+        {% endfor %}
+      </ol>
+    </div>
+    <!-- /#comments -->
+    <!-- form comment -->
+    <div id="comments">
+        <hr />
+        <h3 class="mb-3">Would you like to share your thoughts?</h3>
+
+        <form method="POST" class="comment-form">
+          {% csrf_token %}
+
+          {{form}}
+          <br>
+          <button type="submit" class="btn btn-primary rounded-pill mb-0">Submit</button>
+        </form>
+    </div>
+    <!-- end form comment -->
+</div>
