@@ -35,11 +35,11 @@ jobs:
     needs: test
     steps:
     - name: executing remote ssh commands using password
-      uses: appleboy/action@master
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.KEY }}
+        password: ${{ secrets.PASSWORD }}
         script: |
           cd mysite
           git pull
