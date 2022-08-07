@@ -1,4 +1,5 @@
 import os
+import sys
 
 from pathlib import Path
 
@@ -80,6 +81,9 @@ else:
             'PORT': env.int('DB_PORT'),
         }
     }
+
+if 'test' in sys.argv or 'test_coverage' in sys.argv:
+    DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
 
 AUTH_PASSWORD_VALIDATORS = [
     {

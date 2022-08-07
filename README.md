@@ -1,5 +1,6 @@
 # About My Self | Simple Django website 
 Sourcode and Resources for My Site <br>
+Live website - https://me.mysite-live.uz <hr>
 Live website - https://mysite-uz.herokuapp.com/ <hr><br>
 <img src="./docs/mysite.png">
 <hr>
@@ -26,6 +27,6 @@ Live website - https://mysite-uz.herokuapp.com/ <hr><br>
 
 
 # Completed with
-* Django 
+* Django, Docker
 * Database Design and Models with Postgresql
-* Deployment to heroku
+* Deployment to DigitalOcean and Heroku
