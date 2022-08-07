@@ -8,15 +8,12 @@
       <div class="container flex-lg-row flex-nowrap align-items-center">
         <div class="navbar-brand w-100">
           <a href="{% url 'home' %}">
-            <img src="{% static 'python-icon.png' %}" srcset="{% static 'python-icon.png' %} 2x" style="height: 100px; padding-left: 70px; margin: 0;"/>
+            <img src="{% static 'err.png' %}" srcset="{% static 'err.png' %} 2x" style="height: 100px; padding-left: 70px; margin: 0;"/>
           </a>
         </div>
         <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
           <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="{% url 'home' %}">Home</a>
-              </li>
+            <ul class="navbar-nav" style="text-align: right;">
 
               <li class="nav-item dropdown">
                 <a class="nav-link" href="{% url 'about' %}">About</a>
@@ -33,7 +30,6 @@
                     <div>
                       <a class="dropdown-header" href="#">Bot aplication</a>
                       <ul class="list-unstyled">
-                        
                     </div>
                     <!-- /.column -->
                   </div>
@@ -49,8 +45,7 @@
                 </li>
               </li>
    
-            <!-- /.navbar-nav -->
-            <!-- /.offcanvas-footer -->
+            </ul>
           </div>
           <!-- /.offcanvas-body -->
         </div>
