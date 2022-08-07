@@ -10,12 +10,12 @@ Live website - https://mysite-uz.herokuapp.com/ <hr><br>
 <hr>
 
 # Installation
-* 1 - clone repo https://github.com/django-dev-uz/My-site.git
+* 1 - clone repo https://github.com/django-dev-uz/MySite.git
 * 2 - create a virtual environment and activate
 *  - pip install virtualenv
 *  - virtualenv env
 *  - env\Scripts\activate
-* 3 - cd into project "mysite"
+* 3 - cd into project "MySite"
 * 4 - set your .env file with using .env_example
 * 5 - pip install -r requirements.txt
 * 6 - python manage.py loaddata fixture/products.json
