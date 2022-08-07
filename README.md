@@ -1,6 +1,6 @@
 # About My Self | Simple Django website 
 Sourcode and Resources for My Site <br>
-Live website - https://me.mysite-live.uz <hr>
+Live website - https://i.mysite-live.uz <hr>
 Live website - https://mysite-uz.herokuapp.com/ <hr><br>
 <img src="./docs/mysite.png">
 <hr>
