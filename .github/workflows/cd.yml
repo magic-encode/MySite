@@ -41,7 +41,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         script: |
-          cd mysite
+          cd MySite
           git pull
           python3 manage.py migrate
           systemctl restart gunicorn.service
