@@ -45,7 +45,7 @@ jobs:
           git pull
           python3 manage.py migrate
           python3 manage.py collectstatic
-          cp -r /root/MySite/static /var/www/static
+          cp -r /root/MySite/static /var/www/static/
           systemctl restart gunicorn.service
       
 
