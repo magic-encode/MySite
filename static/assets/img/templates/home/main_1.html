@@ -1,0 +1,37 @@
+{% load static %}
+
+<div class="container pt-12 pt-md-14 pb-14 pb-md-16">
+    <div class="row gy-10 gy-md-13 gy-lg-0 align-items-center">
+      <div class="col-md-8 col-lg-5 d-flex position-relative mx-auto" data-cues="slideInDown" data-group="header" data-disabled="true">
+        <div class="img-mask mask-1" data-cue="slideInDown" data-group="header" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;"><img src="{% static 'uzu.png' %}" srcset="assets/img/photos/about17@2x.jpg 2x" alt=""></div>
+        <div class="card shadow-lg position-absolute" style="bottom: 10%; right: 2%; animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 300ms; animation-direction: normal; animation-fill-mode: both;" data-cue="slideInDown" data-group="header" data-show="true">
+          <div class="card-body py-4 px-5">
+            <div class="d-flex flex-row align-items-center">
+              <div>
+                <img src="{% static 'py-dj.webp' %}" class="icon-svg icon-svg-sm text-primary mx-auto me-3" alt="">
+              </div>
+              <div>
+                <h3 class="counter mb-0 text-nowrap" style="visibility: visible;">10+</h3>
+                <p class="fs-14 lh-sm mb-0 text-nowrap">Projects Done</p>
+              </div>
+            </div>
+          </div>
+          <!--/.card-body -->
+        </div>
+        <!--/.card -->
+      </div>
+      <!--/column -->
+      <div class="col-lg-6 offset-lg-1 col-xxl-5 text-center text-lg-start" data-cues="slideInDown" data-group="page-title" data-delay="600" data-disabled="true">
+        <h1 class="" data-cue="slideInDown" data-group="page-title" data-delay="600" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 600ms; animation-direction: normal; animation-fill-mode: both;">Python Backend Engineer</h1>
+        <p class="lead fs-25 lh-sm mb-7 px-md-10 px-lg-0" data-cue="slideInDown" data-group="page-title" data-delay="600" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 900ms; animation-direction: normal; animation-fill-mode: both;">
+          Hello! I'm Abdullajon, a backend enginner from Uzbekistan. I really enjoy to working with python projects.
+        </p>
+        <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900" data-cue="slideInDown" data-disabled="true" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 900ms; animation-direction: normal; animation-fill-mode: both;">
+          <span data-cue="slideInDown" data-group="page-title-buttons" data-delay="900" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1200ms; animation-direction: normal; animation-fill-mode: both;"><a href="{% url 'project' %}" class="btn btn-lg btn-primary rounded-pill me-2">See My Works</a></span>
+          <span data-cue="slideInDown" data-group="page-title-buttons" data-delay="900" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both;"><a href="{% url 'contact' %}" class="btn btn-lg btn-outline-primary rounded-pill">Contact Me</a></span>
+        </div>
+      </div>
+      <!--/column -->
+    </div>
+    <!-- /.row -->
+  </div>

@@ -49,8 +49,8 @@ class AddProject(models.Model):
     side = models.CharField(blank=False, null=True,
                             choices=SIDE_CHOICES, max_length=5)
     image = models.ImageField(null=True, blank=False)
-    title = models.CharField(max_length=27, null=True, blank=False)
-    body = models.CharField(max_length=96, null=True, blank=False)
+    title = models.CharField(max_length=150, null=True, blank=False)
+    body = models.CharField(max_length=250, null=True, blank=False)
     link = models.CharField(max_length=255, null=True, blank=False)
     published = models.DateTimeField(auto_now_add=True)
 
@@ -61,20 +61,6 @@ class AddProject(models.Model):
         ordering = ['published']
 
 
-class AddInformation(models.Model):
-    title = models.CharField(max_length=300, null=True, blank=False)
-    body = models.TextField(null=True, blank=False)
-
-    def __str__(self) -> str:
-        return self.title
-
-
-class AddInformation1(models.Model):
-    title = models.CharField(max_length=300, null=True, blank=False)
-    body = models.TextField(null=True, blank=False)
-
-    def __str__(self) -> str:
-        return self.title
 
 
 class GetInfo(models.Model):

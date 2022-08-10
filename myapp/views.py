@@ -8,8 +8,7 @@ from .forms import GetInfoForm
 from .models import Comments
 from .models import PhotoFor
 from .models import AddProject
-from .models import AddInformation
-from .models import AddInformation1
+
 
 from .bots.bot import telegram_bot_sendtext
 
@@ -18,10 +17,7 @@ from .bots.bot import telegram_bot_sendtext
 
 
 def homeView(request):
-    information = AddInformation.objects.all()
-    information1 = AddInformation1.objects.all()
-    context = {'information': information, 'information1': information1}
-    return render(request, 'home/include_home.html', context)
+    return render(request, 'home/include_home.html')
 
 # ----------------------------  about func --------------------------------------------------
 

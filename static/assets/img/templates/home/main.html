@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Hello! I'm Abdullajon, a backend enginner from Uzbekistan. I really enjoy to working with python projects.">
+  <meta name="keywords" content="About Me">
+  <meta name="author" content="Abdullajon">
+
+  <title>My Site</title>
+
+  <link rel="shortcut icon" href="{% static 'sv.png' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/plugins.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/colors/purple.css' %}">
+  <link rel="preload" href="{% static 'assets/css/fonts/thicccboi.css' %}" as="style" onload="this.rel='stylesheet'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    
+
+    {% block content %}
+      
+    {% endblock %}
+    <!-- button up -->
+    {% include 'home/button_up.html' %}
+    <!-- end button up -->
+    <!-- js files -->
+    {% include 'home/js_include.html' %}
+    <!-- end js files -->
+</body>
+</html>

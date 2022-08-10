@@ -3,7 +3,6 @@ from django.test import TestCase, Client
 from myapp.models import GetInfo
 from myapp.models import Comments
 from myapp.models import AddProject
-from myapp.models import AddInformation
 from myapp.models import ProjectCategory
 
 
@@ -30,10 +29,6 @@ class ModelsTestCase(TestCase):
             email="abdulla@gmail.com",
             message="Lorem",
         )
-        self.get_info = AddInformation.objects.create(
-            title="Django ORM",
-            body="Django ORM very good proect and easy",
-        )
         self.client = Client()
         
     def test_comments_instance(self) -> None:
@@ -56,10 +51,6 @@ class ModelsTestCase(TestCase):
         self.assertEquals(my_proj.image, 'static/images/intro.jpg')
         self.assertEquals(my_proj.body, 'Lorem Ipsum is simply dummy text')
     
-    def test_add_info_instance(self) -> None:
-        info = AddInformation.objects.get(title="Django ORM")
-        self.assertEquals(info.title, "Django ORM")
-        self.assertEquals(info.body, "Django ORM very good proect and easy")
         
     def test_get_in_touch_instance(self) -> None:
         """Checks my touch instance in database."""
