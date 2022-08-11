@@ -3,7 +3,7 @@
 <div class="container pt-12 pt-md-14 pb-14 pb-md-16">
     <div class="row gy-10 gy-md-13 gy-lg-0 align-items-center">
       <div class="col-md-8 col-lg-5 d-flex position-relative mx-auto" data-cues="slideInDown" data-group="header" data-disabled="true">
-        <div class="img-mask mask-1" data-cue="slideInDown" data-group="header" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;"><img src="{% static 'uzu.png' %}" srcset="assets/img/photos/about17@2x.jpg 2x" alt=""></div>
+        <div class="img-mask mask-1" data-cue="slideInDown" data-group="header" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;"><img src="{% static 'uzu.png' %}" srcset="{% static 'uzu.png' %} 2x" alt=""></div>
         <div class="card shadow-lg position-absolute" style="bottom: 10%; right: 2%; animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 300ms; animation-direction: normal; animation-fill-mode: both;" data-cue="slideInDown" data-group="header" data-show="true">
           <div class="card-body py-4 px-5">
             <div class="d-flex flex-row align-items-center">
@@ -27,8 +27,16 @@
           Hello! I'm Abdullajon, a backend enginner from Uzbekistan. I really enjoy to working with python projects.
         </p>
         <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900" data-cue="slideInDown" data-disabled="true" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 900ms; animation-direction: normal; animation-fill-mode: both;">
-          <span data-cue="slideInDown" data-group="page-title-buttons" data-delay="900" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1200ms; animation-direction: normal; animation-fill-mode: both;"><a href="{% url 'project' %}" class="btn btn-lg btn-primary rounded-pill me-2">See My Works</a></span>
-          <span data-cue="slideInDown" data-group="page-title-buttons" data-delay="900" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both;"><a href="{% url 'contact' %}" class="btn btn-lg btn-outline-primary rounded-pill">Contact Me</a></span>
+          <span data-cue="slideInDown" data-group="page-title-buttons" data-delay="900" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both; margin-right: 10px;">
+            <a href="download-resume" class="btn btn-lg btn-outline-primary rounded-pill" >
+              My Résumé   
+            </a>
+          </span>
+          <span data-cue="slideInDown" data-group="page-title-buttons" data-delay="900" data-show="true" style="animation-name: slideInDown; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both;">
+            <a href="{% url 'contact' %}" class="btn btn-lg btn-outline-primary rounded-pill">
+              Contact Me
+            </a>
+          </span>
         </div>
       </div>
       <!--/column -->

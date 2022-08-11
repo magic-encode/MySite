@@ -9,8 +9,9 @@ from .models import Comments
 from .models import PhotoFor
 from .models import AddProject
 
-
 from .bots.bot import telegram_bot_sendtext
+
+from django.http.response import FileResponse
 
 
 # ----------------------------  home func --------------------------------------------------
@@ -46,6 +47,14 @@ def aboutView(request):
 
 # ----------------------------  comment func --------------------------------------------------
 
+# ----------------------------  Resume func ----------------------------------------------
+
+def myResumeDownloadView(request):
+
+    filename = './static/resume.pdf'
+
+    response = FileResponse(open(filename, 'rb'))
+    return response
 
 def commentRemove(request, pk):
     comment = Comments.objects.get(id=pk)
