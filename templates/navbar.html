@@ -6,68 +6,39 @@
     <!-- /.alert -->
     <nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
       <div class="container flex-lg-row flex-nowrap align-items-right">
-        <div class="navbar-brand w-100">
-          <a href="{% url 'home' %}">
-            <img src="{% static 'logo.png' %}" srcset="{% static 'logo.png' %} 2x" style="height: 100px; padding-left: 70px; margin: 0;"/>
-          </a>
-        </div>
+        
+        
         <div class="navbar-brand w-100">
           
         </div>
-        <div class="navbar-brand w-100">
-          
-        </div>
-        <div class="navbar-brand w-100">
-          
-        </div>
-        <div class="navbar-brand w-100">
-          
-        </div>
-        <div class="navbar-brand w-100">
-          
-        </div>
-        <div class="navbar-brand w-100">
-          
-        </div>
-        <div class="navbar-brand w-100">
-          
-        </div>
-        <div class="navbar-brand w-100">
-          
-        </div>
-        <div class="navbar-brand w-100">
-          
-        </div>
-        <div class="navbar-brand w-100">
-          
-        </div>
-        <div class="navbar-brand w-100">
-          
-        </div>
+        
         <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
           <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
             <ul class="navbar-nav" style="text-align: right;">
 
               <li class="nav-item dropdown">
+                <a class="nav-link" href="{% url 'home' %}">Home</a>
+              </li> 
+              <li class="nav-item dropdown">
                 <a class="nav-link" href="{% url 'about' %}">About</a>
               </li>     
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="{% url 'project' %}" >Projects</a>
-                <div class="dropdown-menu dropdown-lg">
+                <a class="nav-link" href="{% url 'project' %}" >Projects</a>
+                <!-- <div class="dropdown-menu dropdown-lg">
                   <div class="dropdown-lg-content">
                     <div>
                       <a class="dropdown-header" href="{% url 'project' %}">Web aplicatons</a>
                       
                     </div>
-                    <!-- /.column -->
+                  
                     <div>
                       <a class="dropdown-header" href="#">Bot aplication</a>
                       <ul class="list-unstyled">
                     </div>
-                    <!-- /.column -->
+                 
                   </div>
-                  <!-- /auto-column -->
-                </div>
+                  
+                </div> -->
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link " href="https://t.me/s/Django_2022">Blog</a>
