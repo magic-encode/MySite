@@ -63,27 +63,27 @@ TEMPLATES = [
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
 
-# if DEBUG:
-DATABASES = {
-'default': {
-    'ENGINE': 'django.db.backends.sqlite3',
-    'NAME': BASE_DIR / 'db.sqlite3',
+if DEBUG:
+    DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
-}
-# else:
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': env.str('POSTGRES_ENGINE'),
-#             'NAME': env.str('POSTGRES_DB'),
-#             'USER': env.str('POSTGRES_USER'),
-#             'PASSWORD': env.str('POSTGRES_PASSWORD'),
-#             'HOST': env.str('POSTGRES_HOST'),
-#             'PORT': env.str('POSTGRES_PORT'),
-#         }
-#     }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': env.str('POSTGRES_ENGINE'),
+            'NAME': env.str('POSTGRES_DB'),
+            'USER': env.str('POSTGRES_USER'),
+            'PASSWORD': env.str('POSTGRES_PASSWORD'),
+            'HOST': env.str('POSTGRES_HOST'),
+            'PORT': env.str('POSTGRES_PORT'),
+        }
+    }
 
-# if 'test' in sys.argv or 'test_coverage' in sys.argv:
-#     DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
+if 'test' in sys.argv or 'test_coverage' in sys.argv:
+    DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
