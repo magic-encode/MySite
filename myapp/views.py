@@ -18,6 +18,7 @@ from django.http.response import FileResponse
 
 
 def homeView(request):
+    
     return render(request, 'home/include_home.html')
 
 # ----------------------------  about func --------------------------------------------------

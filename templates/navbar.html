@@ -1,6 +1,5 @@
 
 {% load static %}
-
 <!-- header--> 
 <header class="wrapper bg-soft-primary">
     <!-- /.alert -->
@@ -17,13 +16,13 @@
             <ul class="navbar-nav" style="text-align: right;">
 
               <li class="nav-item dropdown">
-                <a class="nav-link" href="{% url 'home' %}">Home</a>
+                <a class="nav-link" href="{% url 'home' %}" onclick="nextPage()">Home</a>
               </li> 
               <li class="nav-item dropdown">
-                <a class="nav-link" href="{% url 'about' %}">About</a>
+                <a class="nav-link" href="{% url 'about' %}" onclick="nextPage()">About</a>
               </li>     
               <li class="nav-item dropdown">
-                <a class="nav-link" href="{% url 'project' %}" >Projects</a>
+                <a class="nav-link" href="{% url 'project' %}" onclick="nextPage()">Projects</a>
                 <!-- <div class="dropdown-menu dropdown-lg">
                   <div class="dropdown-lg-content">
                     <div>
@@ -41,11 +40,11 @@
                 </div> -->
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link " href="https://t.me/s/Django_2022">Blog</a>
+                <a class="nav-link " href="https://t.me/s/Django_2022" onclick="nextPage()">Blog</a>
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link" href="{% url 'contact' %}" >Contact</a><li class="nav-item dropdown">
+                <a class="nav-link" href="{% url 'contact' %}" onclick="nextPage()">Contact</a><li class="nav-item dropdown">
                 </li>
               </li>
    
@@ -69,3 +68,4 @@
     <!-- /.navbar -->
   </header>
   <!-- /header -->
+  {% comment %} <script scr="../assets/js/script.js"></script> {% endcomment %}
