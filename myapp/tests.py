@@ -59,3 +59,4 @@ class ModelsTestCase(TestCase):
         )
         self.assertEquals(ticket.fullname, 'Khalimov Abdulla')
         self.assertEquals(ticket.message, "Lorem")
+        
