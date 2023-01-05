@@ -12,3 +12,4 @@ def telegram_bot_sendtext(bot_message):
     response = requests.get(send_text)
 
     return response.json()
+

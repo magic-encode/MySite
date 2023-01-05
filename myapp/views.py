@@ -9,7 +9,7 @@ from .models import Comments
 from .models import PhotoFor
 from .models import AddProject
 
-from .bots.bot import telegram_bot_sendtext
+from myapp.bots.bot import telegram_bot_sendtext
 
 from django.http.response import FileResponse
 
@@ -73,8 +73,8 @@ def projectView(request):
 
 # ----------------------------  contact func --------------------------------------------------
 
-
 def contactView(request):
+    
     form = GetInfoForm()
     if request.POST:
         form = GetInfoForm(request.POST)
