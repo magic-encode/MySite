@@ -29,4 +29,4 @@ Live website - https://mysite-uz.herokuapp.com/ <hr><br>
 # Completed with
 * Django, Docker
 * Database Design and Models with Postgresql
-* Deployment to DigitalOcean and Heroku
+* Deployment to DigitalOcean and AWS
