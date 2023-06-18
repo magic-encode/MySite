@@ -1,3 +1,5 @@
+environs==9.5.0
+pip-chill==1.0.3
 Django
 docker
 docker-compose
